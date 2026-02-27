@@ -8,76 +8,66 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Atlas V3</title>
-    <!-- Adding favicon-->
+    <title>Atlas Portfolio</title>
     <link rel="shortcut icon" href="TA.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
-    <div class="video-bg">
-      <video id="bg-video" autoplay loop muted>
-        <source
-          src="https://graph.org/file/57837b3c2721ea10d2345.mp4"
-          type="video/mp4"
-        />
-      </video>
-    </div>
-
-    <div class="container">
-      <div class="screen">
-        <div class="screen__content">
-          <form class="login" action="/qr" method="get" target="_blank">
-            <div class="login__field">
-              <img class="main-logo" src="TA.png" alt="logo" />
-            </div>
-            <div class="login__field">
-              <h2 class="txt">Atlas WhatsApp Bot V-3</h2>
-            </div>
-            <div class="login__field">
-              <input
-                type="text"
-                class="login__input"
-                placeholder="Enter Your Session ID"
-                id="session"
-                name="session"
-              />
-            </div>
-
-            <button class="button login__submit">
-              <span class="button__text">Verify</span>
-            </button>
-            <p class="follow_me">Please Support Me on</p>
-            <div class="my_icons">
-              <a
-                class="icon_git"
-                href="https://www.github.com/FantoX001"
-                style="padding-right: 15px; text-decoration: none"
-                target="_blank"
-              >
-                <i
-                  class="fa fa-github"
-                  style="font-size: 26px; color: rgb(0, 0, 0)"
-                ></i>
-              </a>
-              <a
-                class="icon_git"
-                href="https://www.youtube.com/@fantoxgaming"
-                style="text-decoration: none"
-                target="_blank"
-              >
-                <i
-                  class="fa fa-youtube-play"
-                  style="font-size: 26px; color: rgb(234, 23, 23)"
-                ></i>
-              </a>
-            </div>
-          </form>
-          <div class="social-login">
-            <div class="social-icons"></div>
+    <main class="portfolio-page">
+      <section class="hero-card">
+        <div class="profile-block">
+          <img class="avatar" src="TA.png" alt="Atlas profile picture" />
+          <div>
+            <p class="kicker">Creative Developer</p>
+            <h1>Atlas</h1>
+            <p class="tagline">
+              I design immersive web experiences, brand identities, and polished
+              digital products with a futuristic visual style.
+            </p>
           </div>
         </div>
-      </div>
-    </div>
+
+        <div class="stats">
+          <article>
+            <h2>50+</h2>
+            <p>Projects Delivered</p>
+          </article>
+          <article>
+            <h2>4+</h2>
+            <p>Years Experience</p>
+          </article>
+          <article>
+            <h2>99%</h2>
+            <p>Client Satisfaction</p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <a href="#work" class="button primary">Explore Work</a>
+          <a href="https://www.github.com/FantoX001" target="_blank" class="button ghost"
+            >GitHub Profile</a
+          >
+        </div>
+      </section>
+
+      <section class="wallpapers" id="work">
+        <h3>Featured Wallpapers</h3>
+        <div class="wallpaper-grid">
+          <figure class="wallpaper-card">
+            <img src="BG.png" alt="Blue abstract wallpaper" />
+            <figcaption>Midnight Aurora</figcaption>
+          </figure>
+          <figure class="wallpaper-card">
+            <img src="https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=1000&q=80" alt="Purple galaxy wallpaper" />
+            <figcaption>Cosmic Bloom</figcaption>
+          </figure>
+          <figure class="wallpaper-card">
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1000&q=80" alt="Dark space wallpaper" />
+            <figcaption>Stellar Drift</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
